@@ -49,19 +49,21 @@
     .container { 
       max-width: 1100px; 
       margin: 0 auto; 
+
+
     }
     /* About Section with Parallax */
-    #about {
-      position: relative;
-      background-image: url('your-parallax-image.jpg'); /* Replace with your image */
-      background-attachment: fixed;
-      background-size: cover;
-      background-position: center;
-      min-height: 500px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
+      #about {
+          position: relative;
+          background-image: url('borge.png'); /* Replace with your image */
+          background-attachment: fixed;
+          background-size: cover;
+          background-position: center;
+          min-height: 500px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+      }
     .about-box {
       background: rgba(255, 255, 255, 0.9);
       padding: 30px;
@@ -90,48 +92,65 @@
       width: 100%;
       display: block;
     }
-    .project-overlay {
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      background: rgba(0, 0, 0, 0.7);
-      color: #fff;
-      opacity: 0;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-      padding: 20px;
-      transition: opacity 0.3s ease-in-out;
-    }
+      .project-overlay {
+          position: absolute;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          background: rgba(0, 0, 0, 0.7);
+          color: #fff;
+          opacity: 0;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          text-align: center;
+          padding: 20px;
+          transition: opacity 0.3s ease-in-out;
+      }
     .project-item:hover .project-overlay {
       opacity: 1;
     }
     /* Skills Section */
-    #skills {
-      background: #eee;
-    }
-    .skill-item { 
-      margin-bottom: 20px; 
-    }
-    .skill-title { 
-      margin-bottom: 5px; 
-      font-weight: bold; 
-    }
-    .skill-bar {
-      background: #ddd;
-      border-radius: 5px;
-      overflow: hidden;
-    }
+      #skills {
+          position: relative;
+          background-image: url('borge.png'); /* Replace with your image */
+          background-attachment: fixed;
+          background-size: cover;
+          background-position: center;
+          min-height: 500px;
+
+
+      }
+      .skill-item {
+          margin-bottom: 20px;
+          background: #eee;
+      }
+      .skill-title {
+          margin-bottom: 5px;
+          font-weight: bold;
+          background: #eee;
+      }
+      .skill-bar {
+          background: #ddd;
+          border-radius: 5px;
+          overflow: hidden;
+          background: #eee;
+      }
     .skill-progress {
       background: #27ae60;
       height: 20px;
       width: 0;
       transition: width 1s ease-in-out;
     }
+      .skill-containor {
+          background: #eee;
+          padding: 30px;
+          border-radius: 8px;
+          box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+          text-align: center;
+      }
     /* Contact Section */
     #contact {
       background: #f4f4f4;
@@ -213,174 +232,225 @@
   </style>
 </head>
 <body>
-  <!-- Navigation -->
-  <nav>
-    <ul>
-      <li><a href="#about">About Me</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#skills">Skills</a></li>
-      <li><a href="#contact">Contact Me</a></li>
-    </ul>
-  </nav>
+    <!-- Navigation -->
+    <nav>
+        <ul>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#contact">Contact Me</a></li>
+        </ul>
+    </nav>
 
-  <!-- About Section with Full-Width Parallax Image -->
-  <section id="about">
-    <div class="about-box">
-      <h2>About Me</h2>
-      <p>Hello! I am Rubens, a passionate and creative developer with a knack for designing intuitive web experiences. This portfolio showcases my journey, creativity, and technical expertise.</p>
+    <!-- About Section with Full-Width Parallax Image -->
+    <section id="about">
+        <div class="about-box">
+            <h2>About Me</h2>
+            <p>Hello! I am Rubens, a passionate and creative developer. This portfolio showcases my journey, creativity, and technical expertise. On the internet, and the name that I attach to my projects is Zomborge as this is the name of my studio.</p>
+        </div>
+    </section>
+
+    <!-- Projects Section with Grid Layout -->
+    <section id="projects" class="section">
+        <div class="container">
+            <h2>Projects</h2>
+            <p>Click on a project to see more details.</p>
+            <div class="project-grid">
+                <!-- Project One -->
+                <div class="project-item" data-modal-target="modal-project1">
+                    <img src="office.PNG" alt="Project One">
+                    <div class="project-overlay">
+                        <h3>Office escape</h3>
+                        <p>VR Escape-room project</p>
+                        <p>Click to learn more</p>
+                    </div>
+                </div>
+                <!-- Project Two -->
+                <div class="project-item" data-modal-target="modal-project2">
+                    <img src="office.PNG" alt="Project Two">
+                    <div class="project-overlay">
+                        <h3>Project Two</h3>
+                        <p>Click to learn more</p>
+                    </div>
+                </div>
+
+                <!-- Project Three -->
+                <div class="project-item" data-modal-target="modal-project3">
+                    <img src="project3.PNG" alt="Project Two">
+                    <div class="project-overlay">
+                        <h3>Project Three</h3>
+                        <p>Click to learn more</p>
+                    </div>
+                </div>
+
+                <!-- Add more project items as needed -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal for Project One -->
+    <div id="modal-project1" class="modal">
+        <div class="modal-content">
+            <span class="close" data-target="modal-project1">&times;</span>
+            <h3>Office VR Escape room</h3>
+            <p>Office VR Escape room is a project made using the unity engine for PROD223-25S1, a design course at the university of cantubury. This game was made within 45 days as a part of this course.</p>
+            <div class="project-grid">
+                <img src="office.png" alt="Extended image for Project One">
+                <img src="office.png" alt="Extended image for Project One">
+                <img src="office.png" alt="Extended image for Project One">
+                <img src="office.png" alt="Extended image for Project One">
+                <img src="office.png" alt="Extended image for Project One">
+                <img src="office.png" alt="Extended image for Project One">
+            </div>
+            <video controls>
+                <source src="uniwork.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+
+        </div>
     </div>
-  </section>
 
-  <!-- Projects Section with Grid Layout -->
-  <section id="projects" class="section">
-    <div class="container">
-      <h2>Projects</h2>
-      <p>Click on a project to see more details.</p>
-      <div class="project-grid">
-        <!-- Project One -->
-        <div class="project-item" data-modal-target="modal-project1">
-          <img src="office.PNG" alt="Project One">
-          <div class="project-overlay">
-              <h3>Office escape</h3>
-              <p>VR Escape-room project</p>
-              <p>Click to learn more</p>
-          </div>
+    <!-- Modal for Project two -->
+    <div id="modal-project2" class="modal">
+        <div class="modal-content">
+            <span class="close" data-target="modal-project2">&times;</span>
+            <h3>Office VR Escape room</h3>
+            <p>Office VR Escape room is a project made using the unisengine for PROD223-25S1, a design course at the university of cantubury. This game was made within 45 days as a part of this course.</p>
+            <div class="project-grid">
+                <img src="office.png" alt="Extended image for Project One">
+                <img src="office.png" alt="Extended image for Project One">
+                <img src="office.png" alt="Extended image for Projsct One">
+                <img src="office.png" alt="Extended image for Project One">
+                <img src="office.png" alt="Extended image for Project One">
+                <img src="office.png" alt="Extended image for Project One">
+            </div>
+            <video controls>
+                <source src="uniwork.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+
         </div>
-        <!-- Project Two -->
-        <div class="project-item" data-modal-target="modal-project2">
-          <img src="office.PNG" alt="Project Two">
-          <div class="project-overlay">
-            <h3>Project Two</h3>
-            <p>Click to learn more</p>
-          </div>
-        </div>
-        <!-- Add more project items as needed -->
-      </div>
     </div>
-  </section>
+    <!-- Modal for Project three -->
+    <div id="modal-project3" class="modal">
+        <div class="modal-content">
+            <span class="close" data-target="modal-project3">&times;</span>
+            <h3>I can't stop spinning</h3>
+            <p>I can't stop spinning is a game that I made in 48 hours for fun</p>
+            <div class="project-grid">
+                <img src="project3.png" alt="Extended image for Project One">
 
-  <!-- Modal for Project One -->
-  <div id="modal-project1" class="modal">
-    <div class="modal-content">
-      <span class="close" data-target="modal-project1">&times;</span>
-      <h3>Project One Details</h3>
-      <p>Here you can add additional information about Project One. You could include further descriptions, additional images, and even videos.</p>
-      <img src="extended-project1.jpg" alt="Extended image for Project One">
-      <video controls>
-        <source src="uniwork.mp4" type="video/mp4">
-        Your browser does not support the video tag.
-      </video>
+            </div>
+            <video controls>
+                <source src="ball jump.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+
+        </div>
     </div>
-  </div>
 
-  <!-- Modal for Project Two -->
-  <div id="modal-project2" class="modal">
-    <div class="modal-content">
-      <span class="close" data-target="modal-project2">&times;</span>
-      <h3>Project Two Details</h3>
-      <p>Here you can provide even more details about Project Two. Add any text, images, embedded videos, or any content you need.</p>
-      <img src="extended-project2.jpg" alt="Extended image for Project Two">
-      <!-- Example: An embedded video from YouTube -->
-      <iframe width="100%" height="315" src="https://youtu.be/MBrvLKEIi4o" 
-              title="Project Two Video" frameborder="0" 
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-              allowfullscreen></iframe>
-    </div>
-  </div>
 
-  <!-- Skills Section -->
-  <section id="skills" class="section">
-    <div class="container">
-      <h2>Skills</h2>
-      <div class="skill-item">
-        <div class="skill-title">HTML</div>
-        <div class="skill-bar">
-          <div class="skill-progress" style="width: 90%;"></div>
+    <!-- Skills Section -->
+    <section id="skills" class="section">
+        <div class="container ">
+            <div class="skill-containor">
+                <h2>Skills</h2>
+                <div class="skill-item">
+                    <div class="skill-title">Python</div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 90%;"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-title">HTML</div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 78%;"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-title">CSS</div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 68%;"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-title">C#</div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 70%;"></div>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
-      <div class="skill-item">
-        <div class="skill-title">CSS</div>
-        <div class="skill-bar">
-          <div class="skill-progress" style="width: 85%;"></div>
+    </section>
+
+    <!-- Contact Section (using Formspree) -->
+    <section id="contact" class="section">
+        <div class="container">
+            <h2>Contact Me</h2>
+            <p>If you have a project in mind or simply want to connect, drop me a message!</p>
+            <form action="https://formspree.io/f/yourFormID" method="POST">
+                <div>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required />
+                </div>
+                <div>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="_replyto" required />
+                </div>
+                <div>
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+                <!-- Hidden field for email subject sent by Formspree -->
+                <input type="hidden" name="_subject" value="New message from Portfolio" />
+                <button type="submit">Send</button>
+            </form>
         </div>
-      </div>
-      <div class="skill-item">
-        <div class="skill-title">JavaScript</div>
-        <div class="skill-bar">
-          <div class="skill-progress" style="width: 80%;"></div>
-        </div>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Contact Section (using Formspree) -->
-  <section id="contact" class="section">
-    <div class="container">
-      <h2>Contact Me</h2>
-      <p>If you have a project in mind or simply want to connect, drop me a message!</p>
-      <form action="https://formspree.io/f/yourFormID" method="POST">
-        <div>
-          <label for="name">Name:</label>
-          <input type="text" id="name" name="name" required />
-        </div>
-        <div>
-          <label for="email">Email:</label>
-          <input type="email" id="email" name="_replyto" required />
-        </div>
-        <div>
-          <label for="message">Message:</label>
-          <textarea id="message" name="message" rows="5" required></textarea>
-        </div>
-        <!-- Hidden field for email subject sent by Formspree -->
-        <input type="hidden" name="_subject" value="New message from Portfolio" />
-        <button type="submit">Send</button>
-      </form>
-    </div>
-  </section>
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Rubens. All rights reserved.</p>
+    </footer>
 
-  <!-- Footer -->
-  <footer>
-    <p>&copy; 2025 Rubens. All rights reserved.</p>
-  </footer>
+    <script>
+        // Animate skill bars upon page load
+        window.addEventListener('DOMContentLoaded', () => {
+            document.querySelectorAll('.skill-progress').forEach(progress => {
+                progress.style.width = progress.style.width;
+            });
+        });
 
-  <script>
-    // Animate skill bars upon page load
-    window.addEventListener('DOMContentLoaded', () => {
-      document.querySelectorAll('.skill-progress').forEach(progress => {
-        progress.style.width = progress.style.width;
-      });
-    });
+        // Modal functionality: Opens the modal when a project is clicked, and closes it when the close button is pressed.
+        document.querySelectorAll('.project-item').forEach(item => {
+            item.addEventListener('click', function () {
+                const modalId = this.getAttribute('data-modal-target');
+                const modal = document.getElementById(modalId);
+                if (modal) {
+                    modal.style.display = 'block';
+                }
+            });
+        });
 
-    // Modal functionality: Opens the modal when a project is clicked, and closes it when the close button is pressed.
-    document.querySelectorAll('.project-item').forEach(item => {
-      item.addEventListener('click', function() {
-        const modalId = this.getAttribute('data-modal-target');
-        const modal = document.getElementById(modalId);
-        if (modal) {
-          modal.style.display = 'block';
-        }
-      });
-    });
+        // Close modal when the close button (or anything with the data-target close attribute) is clicked.
+        document.querySelectorAll('.close').forEach(closeBtn => {
+            closeBtn.addEventListener('click', function () {
+                const modalId = this.getAttribute('data-target');
+                const modal = document.getElementById(modalId);
+                if (modal) {
+                    modal.style.display = 'none';
+                }
+            });
+        });
 
-    // Close modal when the close button (or anything with the data-target close attribute) is clicked.
-    document.querySelectorAll('.close').forEach(closeBtn => {
-      closeBtn.addEventListener('click', function() {
-        const modalId = this.getAttribute('data-target');
-        const modal = document.getElementById(modalId);
-        if (modal) {
-          modal.style.display = 'none';
-        }
-      });
-    });
-
-    // Optionally, close modal when clicking outside the modal-content area.
-    window.addEventListener('click', function(event) {
-      document.querySelectorAll('.modal').forEach(modal => {
-        if (event.target === modal) {
-          modal.style.display = 'none';
-        }
-      });
-    });
-  </script>
+        // Optionally, close modal when clicking outside the modal-content area.
+        window.addEventListener('click', function (event) {
+            document.querySelectorAll('.modal').forEach(modal => {
+                if (event.target === modal) {
+                    modal.style.display = 'none';
+                }
+            });
+        });
+    </script>
 </body>
 </html>
