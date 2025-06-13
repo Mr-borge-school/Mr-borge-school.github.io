@@ -5,14 +5,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Portfolio</title>
   <style>
-    /* Global Styles */
+
     body {
       margin: 0;
       font-family: Arial, sans-serif;
       line-height: 1.6;
       scroll-behavior: smooth;
     }
-    /* Navigation Bar */
+
     nav {
       background: #333;
       color: #fff;
@@ -42,7 +42,7 @@
       background: #555;
       border-radius: 5px;
     }
-    /* Section Common Styles */
+
     .section { 
       padding: 100px 20px; 
     }
@@ -52,10 +52,10 @@
 
 
     }
-    /* About Section with Parallax */
+
       #about {
           position: relative;
-          background-image: url('borge.png'); /* Replace with your image */
+          background-image: url('borge.png'); 
           background-attachment: fixed;
           background-size: cover;
           background-position: center;
@@ -72,7 +72,7 @@
       box-shadow: 0 4px 8px rgba(0,0,0,0.1);
       text-align: center;
     }
-    /* Projects Section */
+
     #projects {
       background: #fff;
     }
@@ -112,10 +112,10 @@
     .project-item:hover .project-overlay {
       opacity: 1;
     }
-    /* Skills Section */
+
       #skills {
           position: relative;
-          background-image: url('borge.png'); /* Replace with your image */
+          background-image: url('borge.png'); 
           background-attachment: fixed;
           background-size: cover;
           background-position: center;
@@ -151,7 +151,7 @@
           box-shadow: 0 4px 8px rgba(0,0,0,0.1);
           text-align: center;
       }
-    /* Contact Section */
+ 
     #contact {
       background: #f4f4f4;
     }
@@ -180,16 +180,16 @@
     form button:hover {
       background: #555;
     }
-    /* Footer */
+
     footer {
       background: #333;
       color: #fff;
       text-align: center;
       padding: 20px;
     }
-    /* Modal Styles */
+ 
     .modal {
-      display: none; /* Hidden by default */
+      display: none; 
       position: fixed;
       z-index: 2000;
       left: 0;
@@ -222,17 +222,32 @@
       font-weight: bold;
       cursor: pointer;
     }
-    /* Responsive Adjustments */
+
     @media(max-width: 768px) {
       .about-box {
         width: 90%;
         padding: 20px;
       }
     }
+
+    #playPauseBtn {
+      padding: 10px 20px;
+      font-size: 16px;
+      background-color: #0078D7;
+      color: white;
+      border: none;
+      cursor: pointer;
+      border-radius: 4px;
+    }
+  
+
+    #playPauseBtn:hover {
+      background-color: #005a9e;
+    }
   </style>
 </head>
 <body>
-    <!-- Navigation -->
+
     <nav>
         <ul>
             <li><a href="#about">About Me</a></li>
@@ -242,7 +257,7 @@
         </ul>
     </nav>
 
-    <!-- About Section with Full-Width Parallax Image -->
+
     <section id="about">
         <div class="about-box">
             <h2>About Me</h2>
@@ -250,13 +265,13 @@
         </div>
     </section>
 
-    <!-- Projects Section with Grid Layout -->
+
     <section id="projects" class="section">
         <div class="container">
             <h2>Projects</h2>
             <p>Click on a project to see more details.</p>
             <div class="project-grid">
-                <!-- Project One -->
+
                 <div class="project-item" data-modal-target="modal-project1">
                     <img src="office.PNG" alt="Project One">
                     <div class="project-overlay">
@@ -265,16 +280,16 @@
                         <p>Click to learn more</p>
                     </div>
                 </div>
-                <!-- Project Two -->
+
                 <div class="project-item" data-modal-target="modal-project2">
-                    <img src="office.PNG" alt="Project Two">
+                    <img src="assets/rokos.PNG" alt="Project Two">
                     <div class="project-overlay">
-                        <h3>Project Two</h3>
+                        <h3>March Of the Rokos</h3>
                         <p>Click to learn more</p>
                     </div>
                 </div>
 
-                <!-- Project Three -->
+
                 <div class="project-item" data-modal-target="modal-project3">
                     <img src="project3.PNG" alt="Project Two">
                     <div class="project-overlay">
@@ -283,12 +298,11 @@
                     </div>
                 </div>
 
-                <!-- Add more project items as needed -->
             </div>
         </div>
     </section>
 
-    <!-- Modal for Project One -->
+
     <div id="modal-project1" class="modal">
         <div class="modal-content">
             <span class="close" data-target="modal-project1">&times;</span>
@@ -296,11 +310,11 @@
             <p>Office VR Escape room is a project made using the unity engine for PROD223-25S1, a design course at the university of cantubury. This game was made within 45 days as a part of this course.</p>
             <div class="project-grid">
               <img src="assets/office.png" alt="Extended image for Project One">
-              <img src="assets/office.png" alt="Extended image for Project One">
-              <img src="assets/office.png" alt="Extended image for Projsct One">
-              <img src="assets/office.png" alt="Extended image for Project One">
-              <img src="assets/office.png" alt="Extended image for Project One">
-              <img src="assets/office.png" alt="Extended image for Project One">
+              <img src="assets/mummy.PNG" alt="Extended image for Project One">
+              <img src="assets/fan eye.PNG" alt="Extended image for Projsct One">
+              <img src="assets/background.PNG" alt="Extended image for Project One">
+              <img src="assets/broken galss.PNG" alt="Extended image for Project One">
+              <img src="assets/combo code.PNG" alt="Extended image for Project One">
             </div>
             <video controls>
                 <source src="uniwork.mp4" type="video/mp4">
@@ -310,28 +324,27 @@
         </div>
     </div>
 
-    <!-- Modal for Project two -->
+
     <div id="modal-project2" class="modal">
         <div class="modal-content">
             <span class="close" data-target="modal-project2">&times;</span>
             <h3>Office VR Escape room</h3>
-            <p>Office VR Escape room is a project made using the unity engine for PROD223-25S1, a design course at the university of cantubury. This game was made within 45 days as a part of this course. This game is made to be played with a VR headset. Bellow is the trailor of the game, if you wish to try out the game please contact me and I will allow access to the git files</p>
+            <p>March of the Rokos is a VR game made within the unity engine. It was made as a school assigment while I studied at the university of cantubery. All assets in this game were made by me such as the 3d models, which I made in blender, the music where I used Muse Studio 4, and the game design where I used my brain to create. if you wish to try out the game please contact me and I will allow access to the git files</p>
             <div class="project-grid">
-                <img src="assets/office.png" alt="Extended image for Project One">
-                <img src="assets/office.png" alt="Extended image for Project One">
-                <img src="assets/office.png" alt="Extended image for Projsct One">
-                <img src="assets/office.png" alt="Extended image for Project One">
-                <img src="assets/office.png" alt="Extended image for Project One">
-                <img src="assets/office.png" alt="Extended image for Project One">
+                <img src="assets/rokos.PNG" alt="Extended image for Project One">
+                <button id="playPauseBtn">Play song march of the rocks</button>
+                <audio id="audioPlayer" src="assets/march of the rocks.wav"></audio>
+              
+                <img src="assets/rock fall.PNG" alt="Extended image for Projsct One">
+                <img src="assets/blender.PNG" alt="Extended image for Project One">
+                <img src="assets/song lyrics.PNG" alt="Extended image for Project One">
+
             </div>
-            <video controls>
-                <source src="uniwork.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-            </video>
+
 
         </div>
     </div>
-    <!-- Modal for Project three -->
+
     <div id="modal-project3" class="modal">
         <div class="modal-content">
             <span class="close" data-target="modal-project3">&times;</span>
@@ -350,7 +363,7 @@
     </div>
 
 
-    <!-- Skills Section -->
+
     <section id="skills" class="section">
         <div class="container ">
             <div class="skill-containor">
@@ -383,11 +396,11 @@
         </div>
     </section>
 
-    <!-- Contact Section (using Formspree) -->
+
     <section id="contact" class="section">
         <div class="container">
             <h2>Contact Me</h2>
-            <p>If you have a project in mind or simply want to connect, drop me a message!</p>
+            <p>If you have a project in mind or simply want to connect, drop me a message! Resume on request</p>
             <form action="https://formspree.io/f/yourFormID" method="POST">
                 <div>
                     <label for="name">Name:</label>
@@ -401,27 +414,27 @@
                     <label for="message">Message:</label>
                     <textarea id="message" name="message" rows="5" required></textarea>
                 </div>
-                <!-- Hidden field for email subject sent by Formspree -->
+
                 <input type="hidden" name="_subject" value="New message from Portfolio" />
                 <button type="submit">Send</button>
             </form>
         </div>
     </section>
 
-    <!-- Footer -->
+
     <footer>
         <p>&copy; 2025 Rubens. All rights reserved.</p>
     </footer>
 
     <script>
-        // Animate skill bars upon page load
+
         window.addEventListener('DOMContentLoaded', () => {
             document.querySelectorAll('.skill-progress').forEach(progress => {
                 progress.style.width = progress.style.width;
             });
         });
 
-        // Modal functionality: Opens the modal when a project is clicked, and closes it when the close button is pressed.
+
         document.querySelectorAll('.project-item').forEach(item => {
             item.addEventListener('click', function () {
                 const modalId = this.getAttribute('data-modal-target');
@@ -432,7 +445,7 @@
             });
         });
 
-        // Close modal when the close button (or anything with the data-target close attribute) is clicked.
+
         document.querySelectorAll('.close').forEach(closeBtn => {
             closeBtn.addEventListener('click', function () {
                 const modalId = this.getAttribute('data-target');
@@ -443,7 +456,7 @@
             });
         });
 
-        // Optionally, close modal when clicking outside the modal-content area.
+
         window.addEventListener('click', function (event) {
             document.querySelectorAll('.modal').forEach(modal => {
                 if (event.target === modal) {
@@ -451,6 +464,20 @@
                 }
             });
         });
+
+    const audioPlayer = document.getElementById('audioPlayer');
+    const playPauseBtn = document.getElementById('playPauseBtn');
+    
+
+    playPauseBtn.addEventListener('click', function() {
+      if (audioPlayer.paused) {
+        audioPlayer.play();
+        playPauseBtn.textContent = 'Pause';
+      } else {
+        audioPlayer.pause();
+        playPauseBtn.textContent = 'Play';
+      }
+    });
     </script>
 </body>
 </html>
